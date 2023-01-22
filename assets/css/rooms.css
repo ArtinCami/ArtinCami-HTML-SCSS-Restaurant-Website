@@ -38,6 +38,7 @@
   color: yellow;
   background-color: rgba(0, 0, 0, 0.545);
   border-radius: 20px;
+  animation: tracking-in-expand-fwd 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 .comming-soon p {
   color: yellow;

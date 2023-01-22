@@ -14,7 +14,8 @@ body{
  
 }
 .header{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     width: 100%;
     height: 80px;
     flex-direction: row;
@@ -31,8 +32,12 @@ body{
     
     
     img{
+      justify-self:center;
         width: 80px;
         height: 80px;
+    }
+    ul{
+      justify-self: end;
     }
     
     li{
@@ -142,6 +147,7 @@ body{
     align-items: center;
 
   }
+ 
   h2{
     margin-top: 15px;
   }
@@ -155,6 +161,12 @@ body{
     width: 500px;
     height: 500px;
     border-radius: 30px;
+    .name-lastname{
+      input{
+        display: inline;
+        width: 33%;
+      }
+    }
     input{
       width: 70%;
       height: 30px;
@@ -238,7 +250,7 @@ body{
 }
 .gallery-section{
   width: 100%;
-  height: 170vh;
+  height: 180vh;
   margin: 2em 0 ;
   h2{
     text-align: center;
